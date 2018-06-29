@@ -2,7 +2,22 @@
 
 class Car
 
+@@all = []
 
+attr_reader :make, :model
+
+def initialize(make, model)
+  @make = make
+  @model = model
+end
+
+def self.all
+  @@all
+end
+
+def drive
+  "VROOOOOOOOOOOOM!"
+end
 
 end
 
